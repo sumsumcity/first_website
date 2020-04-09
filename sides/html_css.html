@@ -15,8 +15,10 @@
 
     <body>
         <h1 align="center">HTML und CSS Tutorial</h1><br />
+        <p align=„center“>Alles kann man im Seitenquelltext nachschauen </p>
         <p>PHP Buch ab Seite 585</p>
         <p><a href="https://panjutorials.de/tutorials/html-css-tutorial-fuer-anfaenger/">Link zu einem Youtube Tutorial</a></p><br />
+        <p><a href="https://www.youtube.com/watch?v=GiLNSfOmtZQ&list=PLNmsVeXQZj7qQz698kYRkkBXJDeXJY_I7&index=2">Link zu einem weiteren Youtube Tutorial</a></p><br />
 
         <!--1. Tabelle-->
         <h2><u>Struktur</u></h2>
@@ -75,6 +77,18 @@
             <tr>
                 <td>&ltp&gt...&lt/p&gt</td>
                 <td>Eigener Paragraph (automatischer Zeilenabstand)</td>
+            </tr>
+            <tr>
+                <td>&ltp id="p1"&gt...&lt/p&gt</td>
+                <td>Eine eigene p ID. CSS Zugriff mit #</td>
+            </tr>
+            <tr>
+                <td>&ltp class="p1"&gt...&lt/p&gt</td>
+                <td>Eine eigene p Klasse. CSS Zugriff mit .</td>
+            </tr>
+            <tr>
+                <td>&ltdiv&gt...&lt/div&gt</td>
+                <td>Ein sehr gut veränderbarer Berreich.</td>
             </tr>
             <tr>
                 <td>&ltpre&gt...&lt/pre&gt</td>
@@ -216,10 +230,50 @@
                 <td>colspan == Länge des Kästchens, rowspan == Grösse des Kästchens</td>
             </tr>
         </table>
+        <hr />
 
-        <!--8. Tabelle-->
-        <h2><u>CSS</u></h2>
-        <p align=„center“>In Bearbeitung</p>
+        <!---------------------------------------------------------------------------------------------------------------------->
+        <h1 align="center"><u>CSS</u></h1>
+        <h2><u>Allgemein</u></h2>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+            <tr>
+                <td>#p1 {...}</td>
+                <td>Spezifische ID für p mit Html definiert!</td>
+            </tr>
+            <tr>
+                <td>.p1 {...}</td>
+                <td>Spezifische Klasse für p mit Html definiert!</td>
+            </tr>
+            
+        </table>
+
+        <h2><u>Background</u></h2>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+            <tr>
+                <td>background-image: url("Pfad")</td>
+                <td>Hintergrundbild einfügen</td>
+            </tr>
+            <tr>
+                <td>background-image: url("Pfad")</td>
+                <td>Hintergrundbild einfügen</td>
+            </tr> 
+            <tr>
+                <td>background-repeat: no-repeat</td>
+                <td>Wieviel Mal wiederholt</td>
+            </tr>
+            <tr>
+                <td>background-position: ...</td>
+                <td>Position</td>
+            </tr>
+        </table>
 
     </body>
 </html>
