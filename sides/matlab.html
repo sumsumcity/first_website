@@ -16,5 +16,129 @@
     <body>
         <h1 align="center">Git Tutorial</h1><br />
 
+        <!--1. Tabelle-->
+        <h2><u>Grundlagen</u></h2>
+        <p>Kommando-Fenster kann auch wie ein Terminal gebraucht werden. Auchtung Matlab ist vorallem für Naturwissenschaftler. Darum beginnt man bei 1 zu zählen.</p>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+
+            <tr>
+                <td>help help</td>
+                <td>Zeigt auf was man machen kann</td>
+            </tr>
+            <tr>
+                <td>a = 2.5</td>
+                <td>Variabeln speichern</td>
+            </tr>
+            <tr>
+                <td>a = 2.5<b>;</b></td>
+                <td>Ohne Rückmeldung</td>
+            </tr>
+            <tr>
+                <td>a= 1.7<b>,</b> b=2.45</td>
+                <td>Kommas trennen die Befehle</td>
+            </tr>
+            <tr>
+                <td>clear a</td>
+                <td>Löscht die Variable a</td>
+            </tr>
+            <tr>
+                <td>clear all</td>
+                <td>Löscht alle Variabeln</td>
+            </tr>
+            <tr>
+                <td>clc</td>
+                <td>Säubert das Kommando-Fenster</td>
+            </tr>
+            <tr>
+                <td>whos a</td>
+                <td>Zeigt was und wieviel stoarge die Variable braucht</td>
+            </tr>
+        </table>
+
+        <!--2. Tabelle-->
+        <h2><u>Basic Operations</u></h2>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+
+            <tr>
+                <td>^ * /</td>
+                <td>power, multiplication, division</td>
+            </tr>
+            <tr>
+                <td>+ -</td>
+                <td>addition, subtraction</td>
+            </tr>
+            <tr>
+                <td>== ~=</td>
+                <td>equivalent to, unequal to (~ mit alt+N)</td>
+            </tr>
+            <tr>
+                <td>&|~</td>
+                <td>and or not</td>
+            </tr>
+            <tr>
+                <td>23*10^(-2) 23e-2</td>
+                <td>e ist das gleiche wie 10^()</td>
+            </tr>
+            <tr>
+                <td>sin cos tan sqrt abs exp log log2 log10 floor ceil round</td>
+                <td>Built-in functions (Keine Ahnung: help sin)</td>
+            </tr>
+            <tr>
+                <td>ans pi eps i j nan inf realmin realmax</td>
+                <td>Predefined variables</td>
+            </tr>
+        </table>
+
+        <!--3. Tabelle-->
+        <h2><u>Vectorial computations</u></h2>
+        <p>Matlab stores every number in an array or matrix</p>
+        <p>1xn or nx1 are both vectors</p>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+
+            <tr>
+                <td>a=[1,2,3,4] a=[1 2 3 4]</td>
+                <td>row vecor (1x4)</td>
+            </tr>
+            <tr>
+                <td>a=[1;2;3;4]</td>
+                <td>column vector (4x1)</td>
+            </tr>
+            <tr>
+                <td>a = beginning number:step size:ending number</td>
+                <td>creates vetor with these values</td>
+            </tr>
+            <tr>
+                <td>b=zeros(1,10) b=ones(1,10) b=4*ones(1,10)</td>
+                <td>fills vector with number</td>
+            </tr>
+            <tr>
+                <td>b = linspace(1,10,3)</td>
+                <td>[1.0 5.5 10.0]</td>
+            </tr>
+            <tr>
+                <td>a(3) a(end) a(2:7)</td>
+                <td>takes third or end element in vector a</td>
+            </tr>
+            <tr>
+                <td>size(a) length(a)</td>
+                <td>size shows rows and columns</td>
+            </tr>
+            <!--Begin of vector operations-->
+
+        </table>
+
+
     </body>
 </html>
