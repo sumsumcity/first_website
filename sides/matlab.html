@@ -132,11 +132,114 @@
                 <td>takes third or end element in vector a</td>
             </tr>
             <tr>
-                <td>size(a) length(a)</td>
+                <td>size(a) length(a) (max(size(a)) | size(a, 1)))</td>
                 <td>size shows rows and columns</td>
             </tr>
             <!--Begin of vector operations-->
+            <tr>
+                <td>+ - * /</td>
+                <td>+/- If they have the same length. * Matrix multiplication. / is right division so: A/B=C --> C*B=A</td>
+            </tr>
+            <tr>
+                <td>b = a'</td>
+                <td>Transpose</td>
+            </tr>
+            <tr>
+                <td>a+b (not same Orientation)</td>
+                <td>Broadcasting</td>
+            </tr>
+            <tr>
+                <td>c = a.*b | c = a*b’ | c = b’*a</td>
+                <td>Element-wise multiplication | Scalar product | Broadcast multiplication</td>
+            </tr>
+            <tr>
+                <td>c = a./b</td>
+                <td>Element-wise usual division</td>
+            </tr>
+        </table>
 
+        <!--4. Tabelle-->
+        <h2><u>Matrices</u></h2>
+        <p>Matlab stores every number in an array or matrix</p>
+        <p>1xn or nx1 are both vectors</p>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+            <tr>
+                <td>a=[1 2 3; 4 5 6] | b=[1,2,3; 4,5,6]</td>
+                <td>Matrix aufstellen</td>
+            </tr>
+            <tr>
+                <td>A=eye(5) | A=zeros(4,3) | A=ones(4,3) | A = diag([1,2,3])</td>
+                <td>Einheitsmatrix | zero/ones matrix with 4 rows and 3 columns | Zahlen in Diagonalen</td>
+            </tr>
+            <tr>
+                <td>reshape(a,2,6)</td>
+                <td>macht bestehende matrix zu 2x6 Matrix</td>
+            </tr>
+            <tr>
+                <td>+ - .* ./ .^</td>
+                <td>Element-wise: sum/substraction/multiplication/division/power</td>
+            </tr>
+            <tr>
+                <td>* ^  ’ inv \ </td>
+                <td>Matrix multiplication/Power for square matrix/Conjugate transposed/inverse/Linear system solver</td>
+            </tr>
+            <tr>
+                <td>| & ∼ == ∼= < > <= >=</td>
+                <td>Element-wise: logic operations/comparison operators</td>
+            </tr>
+            <tr>
+                <td>A + 1</td>
+                <td>Broadcasting (alle Elemente in A +1)</td>
+            </tr>
+        </table>
+
+        <!--5. Tabelle-->
+        <h2><u>Operations on arrays</u></h2>
+        <table align="center" border="1" width="95%" cellpadding="5px">
+            <tr>
+                <th width="50%">Code</th> 
+                <th width="50%">Erklärung</th>
+            </tr>
+            <tr>
+                <td>D(:,2)= [12,13,14]</td>
+                <td>Changes the full row</td>
+            </tr>
+            <tr>
+                <td>D(4:5,:) = [7,8,9;10,11,12] (if D like [1,2,3;4,5,6;7,8,9])</td>
+                <td>Two rows are added</td>
+            </tr>
+            <tr>
+                <td>A==4</td>
+                <td>Testing an array element-wise</td>
+            </tr>
+            <tr>
+                <td>find([2,3,4,5]>3)</td>
+                <td>Returns index in the array</td>
+            </tr>
+            <tr>
+                <td>A(:,[2,4]) = []</td>
+                <td>Clearing elements in an array</td>
+            </tr>
+            <tr>
+                <td>C=shiftdim(D3,1)</td>
+                <td>Shifting dimensions</td>
+            </tr>
+            <tr>
+                <td>max(A) min(A) sum(A) mean(A) median(A) std(A)</td>
+                <td>maximum minimum statistic standard deviation</td>
+            </tr>
+            <tr>
+                <td>isequal(A,B)</td>
+                <td>Checks if A and B are equal matrices</td>
+            </tr>
+            <tr>
+                <td>kron(A,B)</td>
+                <td>Computes the outer tensor product of two matrices</td>
+            </tr>
         </table>
 
 
